@@ -1,0 +1,7 @@
+.vscode
+__pycache__
+data/raw/articles_txt/
+data/raw/articles/
+data/articles_indices_faiss/
+data/failed_chunks/
+models/
