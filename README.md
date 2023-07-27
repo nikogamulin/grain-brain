@@ -11,15 +11,11 @@ Getting Started
 
 1.  **Clone the repository**:
     
-    bashCopy code
-    
     `git clone https://github.com/nikogamulin/grain-brain`
     
 2.  **Download model files**: The model files can be downloaded from the provided link. After downloading, place the [model files](https://drive.google.com/drive/folders/1y3Ry94OHcu3V_hD2Y22Z_5K4IO9S27yV?usp=sharing) into the `models` folder in your local clone of the repository.
     
 3.  **Install Dependencies**: Install all the required dependencies for the project. It is recommended to create a virtual environment first.
-    
-    bashCopy code
     
     ``python -m venv env source env/bin/activate  # On Windows use `env\Scripts\activate` pip install -r requirements.txt``
     
@@ -31,21 +27,15 @@ Usage
     
 2.  **Parse the articles**: Run `articles_pdf_parser.py` to transform the articles into `.txt` files.
     
-    bashCopy code
-    
     `python articles_pdf_parser.py`
     
     This will create text files from your PDFs and store them in `data/raw/articles_txt`.
     
 3.  **Build FAISS vector store**: After generating text files, run `faiss_vectorstore_builder.py` to create the index.
     
-    bashCopy code
-    
     `python faiss_vectorstore_builder.py`
     
 4.  **Run the application**: After the index has been built, run the Streamlit application.
-    
-    bashCopy code
     
     `streamlit run app.py`
     
